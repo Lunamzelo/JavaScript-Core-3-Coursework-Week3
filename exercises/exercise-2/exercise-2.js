@@ -1,3 +1,5 @@
+
+
 let hogwarts = [
   {
     firstName: "Harry",
@@ -70,3 +72,19 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+hogwarts.forEach((element) => {
+  let { firstName, lastName, house , pet, occupation} = element;
+  if (house === "Gryffindor") {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
+
+
+
+hogwarts.forEach(element => {
+  let  { firstName, lastName, house , pet, occupation} = element;
+  if (occupation === "Teacher" && pet !== null) {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
